@@ -1,4 +1,4 @@
-import * as sim from "../native.node";
+import * as sim from "../native";
 import { UserAccount } from "./user";
 import * as path from "path";
 

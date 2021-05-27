@@ -21,8 +21,8 @@
   },
   "scripts": {
     "install": "yarn build",
-    "build:native": "cargo-cp-artifact -a cdylib near_sim_bindings native.node -- cargo build --message-format=json-render-diagnostics",
-    "build:native:release": "yarn build:native --release && strip native.node",
+    "build:native": "cargo-cp-artifact -a cdylib near_sim_bindings bin/linux_x64.node -- cargo build --message-format=json-render-diagnostics",
+    "build:native:release": "yarn build:native --release && strip bin/linux_x64.node",
     "build:lib": "tsc && node asconfig.js --target debug --wat",
     "build:release": "yarn build:native:release && tsc && node asconfig.js",
     "build": "yarn build:lib && yarn build:native",
@@ -30,8 +30,10 @@
     "pretest": "yarn build"
   },
   "files": [
+    "native",
+    "native.d.ts",
     "native.node",
-    "native.node.d.ts",
-    "dist"
+    "dist",
+    "bin"
   ]
 }

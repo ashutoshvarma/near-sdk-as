@@ -20,7 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.utils = exports.ExecutionResult = exports.UserTransaction = exports.UserAccount = exports.DEFAULT_GENESIS_CONFIG = exports.STORAGE_AMOUNT = exports.DEFAULT_GAS = exports.to_yocto = exports.init_simulator = void 0;
-const sim = __importStar(require("../native.node"));
+const sim = __importStar(require("../native"));
 const user_1 = require("./user");
 const path = __importStar(require("path"));
 // From v3.2.0 near-sdk-sim crate cache contract storage, and

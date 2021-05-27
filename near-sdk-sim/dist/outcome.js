@@ -21,7 +21,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExecutionResult = void 0;
 const utils_1 = require("./utils");
-const sim = __importStar(require("../native.node"));
+const sim = __importStar(require("../native"));
 /**
  * An ExecutionResult is created by a UserAccount submitting a transaction.
  * It wraps an ExecutionOutcome which is the same object returned from an RPC call.

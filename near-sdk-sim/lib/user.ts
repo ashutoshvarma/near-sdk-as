@@ -1,5 +1,5 @@
 import { RustRef } from "./utils";
-import * as sim from "../native.node";
+import * as sim from "../native";
 import * as fs from "fs";
 import { join } from "path";
 import { ExecutionResult } from "./outcome";

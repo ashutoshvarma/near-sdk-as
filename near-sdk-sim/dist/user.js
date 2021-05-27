@@ -21,7 +21,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserTransaction = exports.UserAccount = void 0;
 const utils_1 = require("./utils");
-const sim = __importStar(require("../native.node"));
+const sim = __importStar(require("../native"));
 const fs = __importStar(require("fs"));
 const path_1 = require("path");
 const outcome_1 = require("./outcome");

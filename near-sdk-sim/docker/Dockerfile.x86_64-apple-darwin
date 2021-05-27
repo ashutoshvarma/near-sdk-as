@@ -1,0 +1,8 @@
+FROM joseluisq/rust-linux-darwin-builder:1.52.1
+
+# RUN apt-get update && apt-get install -y gcc-multilib g++-multilib
+# RUN apt-get update && apt-get install -y clang-3.9 libclang-3.9-dev
+
+ENV CC="o32-clang"
+ENV CXX="o32-clang++"
+ENV RUST_BACKTRACE="full"

@@ -1,0 +1,8 @@
+[target.x86_64-unknown-linux-gnu]
+image = "ashutoshvarma/rust-cross-linux64:latest"
+
+[target.i686-unknown-linux-gnu]
+image = "ashutoshvarma/rust-cross-linux32:latest"
+
+[target.x86_64-apple-darwin]
+image = "ashutoshvarma/rust-cross-mac64:latest"
